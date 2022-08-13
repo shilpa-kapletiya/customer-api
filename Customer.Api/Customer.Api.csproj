@@ -2,12 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <OutputType>exe</OutputType>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
       <DocumentationFile>bin\Debug\net6.0\Customer.Api.xml</DocumentationFile>
-      <Prefer32bit>true</Prefer32bit>
       <NoWarn>1701;1702;1591;VSTHRD200</NoWarn>
     </PropertyGroup>
 
@@ -16,10 +16,16 @@
       <NoWarn>1701;1702;1591;VSTHRD200</NoWarn>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
         <PackageReference Include="AutoMapper" Version="11.0.1" />
         <PackageReference Include="Dapper" Version="2.0.123" />
-        <PackageReference Include="FluentValidation" Version="11.1.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.1" />
+        <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="6.0.7" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.7" />
         <PackageReference Include="Npgsql" Version="6.0.5" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
