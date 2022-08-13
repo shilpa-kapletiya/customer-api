@@ -2,7 +2,7 @@ using System;
 
 namespace Customer.Api.Models;
 
-public class CustomerCreateModel : ICustomerCommonModel
+public interface ICustomerCommonModel
 {
     public string Name { get; set; }
     public DateTime DateOfBirth { get; set; }

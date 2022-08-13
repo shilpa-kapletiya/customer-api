@@ -1,6 +1,6 @@
 namespace Customer.Api.Infrastructure.Data;
 
-public static class DbConnnectionProviderFactory
+public static class DbConnectionProviderFactory
 {
     public static IDbConnectionProvider GetDbConnectionProvider()
     {
