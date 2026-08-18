@@ -1,6 +1,6 @@
 # Customer API 
 
-Demonstrates a REST API using the ASP.NET Web API framework. 
+Demonstrates a REST API using the ASP.NET Web API framework and C#. 
 
 The customer resource has GET, POST, PUT, PATCH and DELETE endpoints. Request validation on provided using fluent validation framework.
 
